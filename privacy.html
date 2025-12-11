@@ -45,29 +45,29 @@
   
   <p>All preference data is stored using Chrome's built-in <code>chrome.storage.local</code> and <code>chrome.storage.sync</code> APIs. This data consists solely of non-sensitive configuration values and never includes patient information or case details.</p>
 
-  <h2>Permissions Explained</h2>
-  <p>CappyView requests the following Chrome permissions. Here's why each is needed:</p>
+<h2>Permissions Explained</h2>
+<p>CappyView requests the following Chrome permissions. Here's why each is needed:</p>
 
-  <h3>Storage Permission</h3>
-  <p>Used to save your UI preferences (sidebar width, toolbar state, theme color, PDF zoom level) locally on your device. No patient data is ever stored.</p>
+<h3>Storage Permission</h3>
+<p>Used to save your UI preferences (sidebar width, toolbar state, theme color, PDF zoom level) locally on your device. No patient data is ever stored.</p>
 
-  <h3>Scripting Permission</h3>
-  <p>Used only on open LIMS case tabs to run small, in-page DOM probes via <code>chrome.scripting.executeScript</code>. These probes discover related internal links (samples, sendout panel orders, Support Review pages, and attachment PDFs) so the "Open / Close Case Tabs" tools can correctly identify which tabs belong to the active case. No remote code is executed, no scripts are injected into non-whitelisted sites, and the results never leave the user's machine.</p>
-  
-  <h3>Tabs Permission</h3>
-  <p>Used to open and manage case-related tabs (Files, Images, Samples, Support pages) based on the current case you're viewing. CappyView does not access tabs outside the specified internal domains and does not read your browsing history.</p>
+<h3>Scripting Permission</h3>
+<p>Used only on open LIMS case tabs to run small, in-page DOM probes via <code>chrome.scripting.executeScript</code>. These probes discover related internal links (samples, sendout panel orders, Support Review pages, and attachment PDFs) so the "Open / Close Case Tabs" tools can correctly identify which tabs belong to the active case. No remote code is executed, no scripts are injected into non-whitelisted sites, and the results never leave the user's machine.</p>
 
-  <h3>Web Navigation Permission</h3>
-  <p>Detects when you navigate between pages in the single-page application to refresh toolbars and sidebars appropriately. Does not intercept, modify, or monitor network traffic.</p>
+<h3>Tabs Permission</h3>
+<p>Used to open and manage case-related tabs (Files, Images, Samples, Support pages) based on the current case you're viewing. CappyView does not access tabs outside the specified internal domains and does not read your browsing history.</p>
 
-  <h3>Host Permissions</h3>
-  <p>CappyView only operates on these specific internal domains:</p>
-  <ul>
-    <li><code>https://lims.natera.com/prod-lims/app/*</code></li>
-    <li><code>https://lims.natera.com/extranet/app/*</code></li>
-    <li><code>https://generesults.baylorgenetics.com/*</code></li>
-  </ul>
-  <p>These permissions allow CappyView to add functionality to these internal tools. The extension cannot access any other websites or domains.</p>
+<h3>Web Navigation Permission</h3>
+<p>Detects when you navigate between pages in the single-page application to refresh toolbars and sidebars appropriately. Does not intercept, modify, or monitor network traffic.</p>
+
+<h3>Host Permissions</h3>
+<p>CappyView only operates on these specific internal domains:</p>
+<ul>
+  <li><code>https://lims.natera.com/prod-lims/app/*</code></li>
+  <li><code>https://lims.natera.com/extranet/app/*</code></li>
+  <li><code>https://generesults.baylorgenetics.com/*</code></li>
+</ul>
+<p>These permissions allow CappyView to add functionality to these internal tools. The extension cannot access any other websites or domains.</p>
 
   <h2>Third-Party Code</h2>
   <p>CappyView includes the following third-party libraries:</p>
@@ -125,5 +125,6 @@
   </nav>
 </body>
 </html>
+
 
 
