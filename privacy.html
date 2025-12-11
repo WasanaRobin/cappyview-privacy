@@ -12,34 +12,30 @@
     code { background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
     ul { margin: 0.5em 0; }
     li { margin: 0.5em 0; }
-    .notice { background: #e8f4fd; border-left: 4px solid #1a73e8; padding: 1em; margin: 1.5em 0; }
     .summary-box { background: #f0f8ff; border: 2px solid #1a73e8; padding: 1.5em; margin: 2em 0; border-radius: 6px; }
     .summary-box p { margin: 0.5em 0; font-size: 1.05em; }
-    .technical-details { background: #f9f9f9; padding: 1em; margin: 1.5em 0; border-radius: 4px; font-size: 0.95em; }
+    .technical-note { background: #f9f9f9; padding: 1em; margin: 1em 0; border-left: 3px solid #999; font-size: 0.95em; }
   </style>
 </head>
 <body>
   <h1>Privacy Policy for CappyView</h1>
   <p><strong>Last Updated:</strong> December 11, 2025</p>
   
+  <h2>Privacy Summary</h2>
   <div class="summary-box">
-    <p><strong>Privacy Summary:</strong></p>
-    <p><strong>CappyView does not collect, store, or transmit any user or patient data. All processing occurs locally in the browser.</strong></p>
+    <p><strong>CappyView does not collect, store, or transmit any user or patient data. All processing occurs locally within the user's browser.</strong></p>
     <p>This extension stores only non-sensitive user interface preferences on your device. No information ever leaves your computer.</p>
   </div>
 
   <h2>What CappyView Does</h2>
-  <p>CappyView is a Chrome extension that enhances case management workflows by adding navigation tools, customization options, and productivity features to authorized workplace systems.</p>
+  <p>CappyView is a Chrome extension that enhances case-related workflows by adding navigation tools, customization options, and productivity features to authorized workplace systems. It operates only within domains the user already has legitimate access to.</p>
 
   <h2>Data Collection & Storage</h2>
-  
-  <div class="notice">
-    <strong>Important:</strong> CappyView processes case information only within the user's browser. No patient data, personal information, or sensitive content is transmitted, uploaded, or shared. All data remains on your device.
-  </div>
+  <p><strong>CappyView processes information only within the user's browser. No patient data, personal information, or sensitive content is transmitted, uploaded, or shared.</strong></p>
 
-  <p><strong>CappyView does NOT collect, transmit, or store:</strong></p>
+  <p><strong>CappyView does not collect, transmit, or store:</strong></p>
   <ul>
-    <li>Patient health information (PHI) or medical records</li>
+    <li>Patient health information (PHI)</li>
     <li>Personal identifying information</li>
     <li>Case data or sensitive business information</li>
     <li>Usage analytics or telemetry</li>
@@ -47,91 +43,85 @@
     <li>Any data sent to external servers</li>
   </ul>
 
-  <p><strong>CappyView DOES store locally (on your device only):</strong></p>
+  <p><strong>CappyView does store locally (on your device only):</strong></p>
   <ul>
-    <li>User interface preferences (sidebar width, toolbar position, theme color)</li>
-    <li>Display settings (PDF zoom level, table filter preferences)</li>
-    <li>Temporary session data for image gallery performance (automatically cleared when gallery closes)</li>
+    <li>Sidebar width, toolbar position, theme color</li>
+    <li>PDF zoom level</li>
+    <li>Table filter preferences</li>
+    <li>Temporary image gallery session data (cleared automatically)</li>
   </ul>
   
-  <p>All preference data is stored using Chrome's built-in <code>chrome.storage.local</code> and <code>chrome.storage.sync</code> APIs. This data consists solely of non-sensitive configuration values—UI settings only—and never includes patient information, case details, or any personally identifiable data.</p>
+  <p>All local data is stored using Chrome's built-in <code>chrome.storage.local</code> and <code>chrome.storage.sync</code> APIs. These values consist solely of non-sensitive UI configuration settings.</p>
 
   <h2>Permissions Explained</h2>
-  <p>CappyView requests the following Chrome permissions. Here's why each is needed:</p>
 
   <h3>Storage Permission</h3>
-  <p>Used to save your UI preferences (sidebar width, toolbar state, theme color, PDF zoom level) locally on your device. No patient data or sensitive information is ever stored.</p>
+  <p>Used to save UI preferences (sidebar width, toolbar state, theme color, PDF zoom level). No patient or sensitive data is ever stored.</p>
 
   <h3>Scripting Permission</h3>
-  <p>Used only on authorized workplace pages to run small, in-page DOM probes via <code>chrome.scripting.executeScript</code>. These probes discover related links (samples, support pages, and attachment PDFs) so the "Open / Close Tabs" tools can correctly identify which tabs belong to the active case. No remote code is executed, no scripts are injected into non-authorized sites, and the results never leave the user's machine.</p>
+  <p>Used only on authorized workplace pages to run small DOM probes that help identify related internal links (files, images, support pages, attachments). No remote code is executed, and results never leave the user's device.</p>
 
   <h3>Tabs Permission</h3>
-  <p>Used to open and manage case-related tabs (Files, Images, Samples, Support pages) based on the current case you're viewing. CappyView does not access tabs outside the specified authorized domains and does not read your browsing history.</p>
+  <p>Allows the extension to open and manage case-related tabs. CappyView does not read browsing history and cannot access tabs outside authorized domains.</p>
 
   <h3>Web Navigation Permission</h3>
-  <p>Detects when you navigate between pages in single-page applications to refresh toolbars and sidebars appropriately. Does not intercept, modify, or monitor network traffic.</p>
+  <p>Used to detect when the user navigates within single-page applications so the toolbar and sidebar can update. No network traffic is monitored or modified.</p>
 
   <h3>Host Permissions</h3>
-  <p>CappyView only operates on specific authorized workplace domains that you have legitimate access to as part of your job responsibilities. The extension cannot access any other websites or domains.</p>
+  <p>CappyView operates only on specific workplace domains the user already has access to. It cannot access any other websites.</p>
   
-  <div class="technical-details">
-    <strong>Technical Note:</strong> This extension is designed for use within authorized organizational systems. Access is controlled by your organization's security policies. The extension operates exclusively on domains you are already authorized to access through your workplace credentials.
+  <div class="technical-note">
+    <strong>Technical Note:</strong> Access to underlying systems is controlled by the organization. CappyView operates solely within the scope of the access the user already has.
   </div>
 
   <h2>Third-Party Code</h2>
-  <p>CappyView includes the following third-party libraries:</p>
+  <p>CappyView includes the following bundled libraries:</p>
   <ul>
-    <li><strong>DOMPurify</strong> – Used to sanitize HTML content for security purposes. This library is bundled directly in the extension (not loaded from external sources) and does not collect or transmit any data. Licensed under Apache 2.0.</li>
-    <li><strong>UIcons by Flaticon</strong> – Vector icons used in the user interface. These icons are bundled in the extension and require attribution per the Flaticon Free License.</li>
+    <li><strong>DOMPurify</strong> — Sanitizes HTML for security. Bundled locally, no data transmission.</li>
+    <li><strong>UIcons by Flaticon</strong> — Bundled vector icons. Attribution provided per license terms.</li>
   </ul>
-  <p>For complete license information, see the <a href="licenses.html">Third-Party Licenses page</a>.</p>
+  <p>For full licensing information, see the <a href="licenses.html">Third-Party Licenses page</a>.</p>
 
   <h2>No Analytics or Tracking</h2>
   <p>CappyView includes:</p>
   <ul>
-    <li>❌ No analytics services</li>
-    <li>❌ No tracking cookies</li>
+    <li>❌ No analytics</li>
+    <li>❌ No cookies</li>
     <li>❌ No advertising</li>
-    <li>❌ No telemetry or usage reporting</li>
-    <li>❌ No external network requests</li>
-    <li>❌ No data transmission to third parties</li>
+    <li>❌ No telemetry</li>
+    <li>❌ No external requests</li>
+    <li>❌ No data sharing</li>
   </ul>
+  <p>All processing is performed locally in the user's browser.</p>
 
   <h2>Security</h2>
   <p>CappyView follows Chrome Manifest V3 security standards:</p>
   <ul>
-    <li>All content scripts use strict Content Security Policy</li>
-    <li>DOM insertion is sanitized to prevent XSS attacks</li>
-    <li>Message passing validates origins</li>
+    <li>Strict content security policy</li>
+    <li>DOM sanitization to prevent XSS</li>
+    <li>Validated message passing</li>
     <li>No <code>eval()</code> or dynamic code execution</li>
     <li>Service worker background architecture</li>
-    <li>All processing occurs locally—no data leaves your device</li>
+    <li>Local-only processing (no data transmission)</li>
   </ul>
-  
-  <p>For detailed security information, see the <a href="security.html">Security Documentation</a>.</p>
 
   <h2>Your Rights</h2>
-  <p>Since CappyView does not collect or store any personal data:</p>
+  <p>Since CappyView does not collect personal data:</p>
   <ul>
-    <li>There is no personal data to access, modify, or delete</li>
-    <li>Local preferences can be cleared by uninstalling the extension or resetting Chrome's extension storage</li>
-    <li>No data is shared with third parties</li>
-    <li>All data processing occurs locally on your device</li>
+    <li>There is no personal data to view, modify, or delete</li>
+    <li>All local preferences can be cleared by uninstalling the extension or resetting Chrome extension storage</li>
+    <li>No data is ever shared with third parties</li>
   </ul>
 
   <h2>Updates to This Policy</h2>
-  <p>If CappyView's data practices change, this privacy policy will be updated and the "Last Updated" date will reflect the change. Continued use of the extension after updates constitutes acceptance of the new terms.</p>
+  <p>If CappyView's data practices change, this policy will be updated and the "Last Updated" date will be revised.</p>
 
   <h2>Contact</h2>
-  <p>Questions about this privacy policy or CappyView's data practices?</p>
+  <p>Questions about this privacy policy?</p>
   <p>Email: <a href="mailto:wkeohavong@natera.com">wkeohavong@natera.com</a></p>
 
-  <h2>Context & Intended Use</h2>
-  <div class="technical-details">
-    <p><strong>About This Extension:</strong> CappyView is a workplace productivity tool designed for use within authorized organizational case management systems. It is intended for use by authorized personnel who already have legitimate access to the systems it enhances. The extension requires existing workplace credentials and operates only within the scope of permissions already granted to the user by their organization.</p>
-    
-    <p><strong>Organizational Context:</strong> This extension is designed for internal use within healthcare and laboratory information management environments. Users must be authorized by their organization to access the underlying systems before this extension can provide any functionality.</p>
-  </div>
+  <h2>Intended Use</h2>
+  <p>CappyView is a workplace productivity tool intended for authorized personnel within professional case-management environments. It enhances systems the user already has legitimate access to and does not expand or modify those permissions.</p>
 
   <hr style="margin: 3em 0; border: none; border-top: 1px solid #ddd;">
   
