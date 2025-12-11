@@ -40,6 +40,7 @@ cappyview-privacy/
 ## 🔗 Pages
 
 - **[About CappyView](https://wasanarobin.github.io/cappyview-privacy/)** – Feature overview and introduction
+- **[Support](https://wasanarobin.github.io/cappyview-privacy/support.html)** – Feedback contacts and common solutions
 - **[Privacy Policy](https://wasanarobin.github.io/cappyview-privacy/privacy.html)** – Data practices and permissions
 - **[Security](https://wasanarobin.github.io/cappyview-privacy/security.html)** – Security architecture and practices
 - **[Licenses](https://wasanarobin.github.io/cappyview-privacy/licenses.html)** – Third-party attributions
