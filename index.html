@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CappyView – Chrome Extension for Reviewers</title>
+  <style>
+    body { max-width: 800px; margin: 40px auto; padding: 0 20px; font: 16px/1.6 system-ui, -apple-system, sans-serif; }
+    h1 { color: #1a73e8; }
+    h2 { color: #333; margin-top: 2em; }
+    code { background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+    ul { margin: 0.5em 0; }
+    li { margin: 0.5em 0; }
+    .screenshot-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin-bottom: 24px;
+    }
+    .screenshot-grid img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        background: #fff;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>CappyView</h1>
+  <p>
+    <strong>CappyView</strong> is a Chrome extension that helps reviewers work smarter.
+    It parses requisition files, streamlines case review with toolbars and sidebars,
+    and speeds up batch searches, all directly inside the sites you already use.
+  </p>
+
+  <h2>Features</h2>
+  <ul>
+    <li><strong>Electronic Requisition (eReq) Sidebar</strong>
+      <ul>
+        <li>Detects JSON and XML documents on LIMS pages.</li>
+        <li>Injects an in‑page sidebar into the current tab.</li>
+        <li>Click‑to‑find highlights and scrolls to source nodes.</li>
+        <li>Per‑test renderers with modular parsing.</li>
+        <li>Experimental customizable sidebar is available.</li>
+      </ul>
+    </li>
+    <li><strong>Case Toolbar</strong>
+      <ul>
+        <li>Quick links: Extranet, GC Form, Open All/Files/Images/Samples, Patient Search, Support Page.</li>
+      </ul>
+    </li>
+    <li><strong>Review and Send Toolbar</strong>
+      <ul>
+        <li>Quick actions: close all associated tabs</li>
+        <li>Quick links: Support page, Extranet</li>
+      </ul>
+    </li>
+    <li><strong>Support Page Toolbar</strong>
+      <ul>
+        <li>Navigation Bar added to allow users to scroll-to-view</li>
+        <li>Quick actions: Open Files/Images and save page.</li>
+      </ul>
+    </li>
+    <li><strong>LIMS Dashboard Table Filters</strong>
+      <ul>
+        <li>Filters automatically added to eligible tables upon load.</li>
+        <li>One-click ability to consolidate pagination.</li>
+        <li>Advanced filtering options added.</li>
+        <li>Batch case opening available.</li>
+      </ul>
+    </li>
+    <li><strong>Case Note Tables Enhancement</strong>
+      <ul>
+        <li>Note tables reformatted for cleaner view.</li>
+        <li>Ability to expand and collapse notes added.</li>
+      </ul>
+    </li>
+    <li><strong>Gallery Viewer</strong>
+      <ul>
+        <li>Main image area + scrollable thumbnail strip; zoom, drag zoom‑box, middle‑mouse pan.</li>
+        <li>Supports selecting images, keeping context of the current case ID when available.</li>
+      </ul>
+    </li>
+    <li><strong>Options & Customization</strong>
+      <ul>
+        <li>Options page added.</li>
+        <li>Ability to customize sidebar, case note attachments open, pages open, how pages are open (window/tab), visibility (PDF Zoom, Gallery thumbnail position, and theme / color).</li>
+      </ul>
+    </li>
+    <li><strong>Baylor Search</strong>
+      <ul>
+        <li>Sidebar to perform batch kit searches against Baylor Genetics results console.</li>
+        <li>CSV Export: User‑initiated export of table data; writes to local disk from the page (no remote calls).</li>
+      </ul>
+    </li>
+    <li><strong>Security first:</strong> no remote code, least privilege permissions, no data collection.</li>
+  </ul>
+
+  <h2>Screenshots</h2>
+  <!-- Screenshot grid would be added here -->
+
+  <h2>Contact</h2>
+  <ul>
+    <li><strong>Owner:</strong> Wasana Robin Keohavong</li>
+    <li><strong>Email:</strong> <a href="mailto:wkeohavong@natera.com">wkeohavong@natera.com</a></li>
+  </ul>
+
+  <h2>Learn More</h2>
+  <p>For more information about this extension, see:</p>
+  <nav style="margin-top: 1em;">
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="security.html">Security Documentation</a> |
+    <a href="licenses/DOMPurify-Apache-2.0.txt">DOMPurify License</a>
+  </nav>
+
+  <hr style="margin: 3em 0; border: none; border-top: 1px solid #ddd;">
+</main>
+</body>
+</html>
