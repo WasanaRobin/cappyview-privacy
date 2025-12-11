@@ -52,8 +52,8 @@
   <p>Used to save your UI preferences (sidebar width, toolbar state, theme color, PDF zoom level) locally on your device. No patient data is ever stored.</p>
 
   <h3>Scripting Permission</h3>
-  <p>Allows CappyView to add navigation toolbars and sidebar panels to internal LIMS pages. Scripts only run on whitelisted internal domains and only read publicly visible page elements to enable navigation features.</p>
-
+  <p>Used only on open LIMS case tabs to run small, in-page DOM probes via <code>chrome.scripting.executeScript</code>. These probes discover related internal links (samples, sendout panel orders, Support Review pages, and attachment PDFs) so the "Open / Close Case Tabs" tools can correctly identify which tabs belong to the active case. No remote code is executed, no scripts are injected into non-whitelisted sites, and the results never leave the user's machine.</p>
+  
   <h3>Tabs Permission</h3>
   <p>Used to open and manage case-related tabs (Files, Images, Samples, Support pages) based on the current case you're viewing. CappyView does not access tabs outside the specified internal domains and does not read your browsing history.</p>
 
@@ -125,4 +125,5 @@
   </nav>
 </body>
 </html>
+
 
