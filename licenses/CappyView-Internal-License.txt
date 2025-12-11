@@ -1,0 +1,26 @@
+CappyView Chrome Extension
+Internal License Agreement
+
+Copyright (c) 2025 Wasana Keohavong. All rights reserved.
+Licensed for internal use by Natera, Inc.
+
+This software and its source code ("CappyView") are the original work of
+Wasana Keohavong ("the Author") and are provided to Natera, Inc. ("the
+Company") under a limited, non-exclusive, non-transferable license for
+internal business purposes only.
+
+Natera, Inc. and its authorized employees and contractors may use, run,
+and modify this software internally, but may not distribute, sublicense,
+publish, or otherwise make it available to third parties without the prior
+written consent of the Author.
+
+Ownership of the software, including all copyrights and intellectual
+property rights, remains with the Author unless otherwise agreed in writing.
+
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. IN NO EVENT SHALL
+THE AUTHOR OR THE COMPANY BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
