@@ -11,6 +11,7 @@ The documentation is published via GitHub Pages at:
 
 This repository contains:
 
+- **Support** – Contact info, internal feedback form, and common solutions to troubleshoot complications.
 - **Privacy Policy** – Required by Chrome Web Store, explains data handling and permissions
 - **Security Documentation** – Details security practices and architecture
 - **Third-Party Licenses** – Attribution for open-source components (DOMPurify, Flaticon icons)
