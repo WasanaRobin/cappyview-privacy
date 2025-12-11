@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CappyView Support</title>
+  <style>
+    body {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font: 16px/1.6 system-ui, -apple-system, sans-serif;
+    }
+
+    h1 {
+      color: #1a73e8;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 2em;
+    }
+
+    h3 {
+      color: #555;
+      margin-top: 1.5em;
+      font-size: 1.1em;
+    }
+
+    ul {
+      margin: 0.5em 0 1em;
+      padding-left: 1.2em;
+    }
+
+    li {
+      margin: 0.35em 0;
+    }
+
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .card {
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 1.25em 1.5em;
+      margin: 1.25em 0;
+      background: #fafafa;
+    }
+
+    .technical-note {
+      background: #f9f9f9;
+      padding: 1em;
+      margin: 1em 0;
+      border-left: 3px solid #999;
+      font-size: 0.95em;
+    }
+
+    .warning {
+      border-left: 3px solid #d93025;
+      padding-left: 0.85em;
+      margin: 1em 0;
+      font-size: 0.95em;
+      background: #fff7f7;
+      padding-top: 0.75em;
+      padding-bottom: 0.75em;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.8em;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #e8f0fe;
+      color: #1967d2;
+      margin-bottom: 0.4em;
+    }
+
+    hr {
+      margin: 3em 0 1.5em;
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+
+    nav a {
+      margin-right: 0.5em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>CappyView Support</h1>
+  <p><strong>Need help with CappyView?</strong> This page explains how to report issues, request enhancements, and find
+    answers to common questions.</p>
+
+  <div class="card">
+    <span class="tag">Important</span>
+    <p><strong>CappyView does not collect or transmit any user or patient data.</strong> All processing occurs locally
+      in your browser, and only non-sensitive interface preferences are stored on your device.</p>
+    <p>For full details, see the <a href="privacy.html">Privacy Policy</a>.</p>
+  </div>
+
+  <h2>Contact & Feedback</h2>
+  <p>You can reach the CappyView maintainer at:</p>
+  <ul>
+    <li>Email: <a href="mailto:wkeohavong@natera.com">wkeohavong@natera.com</a></li>
+  </ul>
+  <p>This email is the primary public support channel.</p>
+
+  <h2>Internal Feedback (For Authorized Users Only)</h2>
+  <p>
+    Employees who have access to the internal CappyView documentation may use the internal
+    feedback form. This form is only available to logged-in organizational users:
+  </p>
+
+  <div class="technical-note">
+    <strong>Internal link (requires organizational login):</strong><br>
+    sites.google.com/natera.com/cappyview/feedback-form
+  </div>
+
+  <p>
+    This link is not publicly accessible and is intended solely for internal use. External
+    users should contact support via the email listed above.
+  </p>
+
+  <div class="warning">
+    <strong>Please do not include sensitive data in support requests.</strong>
+    <ul>
+      <li>No patient identifiers (names, MRNs, DOBs, etc.)</li>
+      <li>No screenshots containing PHI</li>
+      <li>No confidential organizational information</li>
+    </ul>
+    <p>Describe the issue in general terms (what you clicked, what you expected, what happened).</p>
+  </div>
+
+  <h2>How to Report a Problem</h2>
+  <p>When requesting support, including the following details helps speed up troubleshooting:</p>
+  <ul>
+    <li>What you were doing (e.g., opening the gallery, using table filters)</li>
+    <li>What you expected to happen</li>
+    <li>What actually occurred</li>
+    <li>Whether the issue is consistent or intermittent</li>
+    <li>Your Chrome version</li>
+    <li>The CappyView version installed</li>
+  </ul>
+
+  <p>If safe to do so, you may include a screenshot with no sensitive information visible.</p>
+
+  <h2>Basic Troubleshooting Steps</h2>
+  <div class="card">
+
+    <h3>1. Confirm the extension is enabled</h3>
+    <ul>
+      <li>Open <strong>chrome://extensions</strong></li>
+      <li>Ensure <strong>CappyView</strong> is toggled <strong>On</strong></li>
+    </ul>
+
+    <h3>2. Make sure you are on a supported domain</h3>
+    <ul>
+      <li>CappyView only activates on authorized workplace systems.</li>
+      <li>If you're on an unsupported site, toolbars and sidebars will not appear.</li>
+    </ul>
+
+    <h3>3. Refresh the page</h3>
+    <ul>
+      <li>Reload (Ctrl+R / Cmd+R)</li>
+      <li>If still not working, close the tab and reopen your workflow entry point</li>
+    </ul>
+
+    <h3>4. Check for extension updates</h3>
+    <ul>
+      <li>Open <strong>chrome://extensions</strong></li>
+      <li>Enable <strong>Developer mode</strong> (top right)</li>
+      <li>Click <strong>Update</strong> to force an extension refresh</li>
+    </ul>
+
+    <h3>5. Try a clean Chrome session</h3>
+    <ul>
+      <li>Close all related tabs</li>
+      <li>Open a new Chrome window and sign back in to your systems</li>
+    </ul>
+
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>Does CappyView send any data outside my browser?</h3>
+  <p>No. CappyView does not transmit data to external servers and performs all processing locally.</p>
+
+  <h3>What does CappyView store?</h3>
+  <p>CappyView stores only non-sensitive display preferences such as sidebar width, toolbar state, PDF zoom, and filter
+    settings.</p>
+
+  <h3>Why does CappyView request these permissions?</h3>
+  <p>Permissions enable the extension to provide navigation and productivity features:</p>
+  <ul>
+    <li><strong>Storage</strong> – saves UI preferences</li>
+    <li><strong>Scripting</strong> – enables page-aware tools</li>
+    <li><strong>Tabs</strong> – manages related tabs</li>
+    <li><strong>Web Navigation</strong> – syncs tools when pages change</li>
+    <li><strong>Host permissions</strong> – restricts operation to authorized domains</li>
+  </ul>
+
+  <h3>Can I reset CappyView settings?</h3>
+  <p>Yes. Reinstalling the extension or clearing Chrome extension storage resets all settings.</p>
+
+  <h3>Who is CappyView for?</h3>
+  <p>CappyView is designed for authorized personnel working within professional case-management systems. It enhances
+    tools you already have access to without changing your permissions.</p>
+
+  <hr>
+
+  <nav>
+    <a href="index.html">About CappyView</a> |
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="security.html">Security</a> |
+    <a href="licenses.html">Licenses</a>
+  </nav>
+
+</body>
+
+</html>
