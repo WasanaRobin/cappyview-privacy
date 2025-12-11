@@ -1,0 +1,25 @@
+Flaticon Free License
+
+Icons by Flaticon
+Source: https://www.flaticon.com/uicons
+
+The Flaticon Free License allows you to use icons from Flaticon in personal
+and commercial projects, provided you include proper attribution.
+
+Attribution Requirement:
+"Icons by Flaticon — https://www.flaticon.com/uicons"
+
+This attribution must be included in a visible location in your project or
+in a credits/licenses section.
+
+Terms:
+- You may use, copy, and modify the icons
+- You may use the icons in both personal and commercial projects
+- Attribution is required
+- You cannot redistribute or sell the icons as-is or as part of an icon set
+- You cannot claim the icons as your own work
+
+For complete terms and conditions, please visit:
+https://www.flaticon.com/terms-of-use
+
+Copyright © Flaticon
