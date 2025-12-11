@@ -37,6 +37,8 @@ cappyview-privacy/
     ├── DOMPurify-Apache-2.0.txt       # DOMPurify license
     ├── CappyView-Internal-License.txt  # Internal license agreement
     └── Flaticon-License.txt           # Flaticon icon license
+└── assets/
+     ├── images/       # folder contain public images
 ```
 
 ## 🔗 Pages
