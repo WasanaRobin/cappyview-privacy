@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Third-Party Licenses – CappyView</title>
+  <style>
+    body { max-width: 800px; margin: 40px auto; padding: 0 20px; font: 16px/1.6 system-ui, -apple-system, sans-serif; }
+    h1 { color: #1a73e8; }
+    h2 { color: #333; margin-top: 2em; border-bottom: 2px solid #e0e0e0; padding-bottom: 0.3em; }
+    h3 { color: #555; margin-top: 1.5em; }
+    code { background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+    ul { margin: 0.5em 0; }
+    li { margin: 0.5em 0; }
+    .license-section { background: #f9f9f9; border-left: 3px solid #1a73e8; padding: 1em; margin: 1.5em 0; }
+    .notice { background: #fff3cd; border-left: 4px solid #ffc107; padding: 1em; margin: 1.5em 0; }
+  </style>
+</head>
+<body>
+  <h1>Third-Party Licenses</h1>
+  <p>This page lists third-party software and assets included in CappyView and the licenses that apply.</p>
+
+  <h2>1. DOMPurify</h2>
+  <div class="license-section">
+    <p><strong>Source:</strong> <a href="https://github.com/cure53/DOMPurify">https://github.com/cure53/DOMPurify</a></p>
+    <p><strong>License:</strong> Apache License, Version 2.0 or Mozilla Public License, Version 2.0</p>
+    <p><strong>Copyright:</strong> © 2015–2025 Dr.-Ing. Mario Heiderich, Cure53 and other contributors</p>
+    
+    <h3>Purpose in CappyView</h3>
+    <p>DOMPurify is used to sanitize JSON, XML, and HTML strings before rendering them inside the sidebar. This prevents Cross-Site Scripting (XSS) and DOM injection attacks from malicious or malformed data.</p>
+    
+    <h3>Integration Method</h3>
+    <ul>
+      <li>DOMPurify is bundled directly inside the extension as a static, minified <code>.js</code> file</li>
+      <li>No remote code or CDN is used</li>
+      <li>The version is pinned to ensure consistency and prevent unexpected updates</li>
+    </ul>
+    
+    <h3>Security Considerations</h3>
+    <ul>
+      <li>DOMPurify is actively maintained and widely recognized as a best-practice library for HTML sanitization</li>
+      <li>It has been reviewed by security experts and is recommended in Mozilla MDN documentation for safe HTML handling in extensions</li>
+      <li>Updates are reviewed periodically to ensure the latest stable release is used</li>
+    </ul>
+    
+    <p><strong>Full License Text:</strong> <a href="licenses/DOMPurify-Apache-2.0.txt">DOMPurify-Apache-2.0.txt</a></p>
+    
+    <h3>References</h3>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Safely_inserting_external_content_into_a_page">Mozilla MDN – Safely inserting external content into a page</a></li>
+    </ul>
+  </div>
+
+  <h2>2. UIcons by Flaticon</h2>
+  <div class="license-section">
+    <p><strong>Source:</strong> <a href="https://www.flaticon.com/uicons">https://www.flaticon.com/uicons</a></p>
+    <p><strong>License:</strong> Flaticon Free License (requires attribution)</p>
+    <p><strong>Attribution:</strong> Icons by Flaticon — <a href="https://www.flaticon.com/uicons">https://www.flaticon.com/uicons</a></p>
+    
+    <h3>Purpose in CappyView</h3>
+    <p>Vector icons used in the user interface for toolbars, status indicators, and navigation elements.</p>
+    
+    <h3>Integration Method</h3>
+    <ul>
+      <li>Icons are bundled directly as SVG files within the extension</li>
+      <li>No external requests are made to load icons</li>
+      <li>Icons are used in accordance with the Flaticon Free License terms</li>
+    </ul>
+    
+    <p><strong>Full License Text:</strong> <a href="licenses/Flaticon-License.txt">Flaticon-License.txt</a></p>
+  </div>
+
+  <h2>3. CappyView Internal License</h2>
+  <div class="notice">
+    <strong>Note:</strong> CappyView itself is proprietary software licensed for internal use by Natera, Inc. This is separate from the open-source third-party components listed above.
+  </div>
+  
+  <div class="license-section">
+    <p><strong>Copyright:</strong> © 2025 Wasana Keohavong. All rights reserved.</p>
+    <p><strong>License:</strong> Licensed for internal use by Natera, Inc.</p>
+    
+    <h3>Summary</h3>
+    <p>This software is provided to Natera, Inc. under a limited, non-exclusive, non-transferable license for internal business purposes only. Ownership remains with the author.</p>
+    
+    <p><strong>Full License Text:</strong> <a href="licenses/CappyView-Internal-License.txt">CappyView-Internal-License.txt</a></p>
+  </div>
+
+  <hr style="margin: 3em 0; border: none; border-top: 1px solid #ddd;">
+  
+  <nav>
+    <a href="index.html">About CappyView</a> |
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="security.html">Security</a>
+  </nav>
+</body>
+</html>
