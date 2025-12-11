@@ -29,6 +29,7 @@ Chrome Web Store requires extensions to have a publicly accessible privacy polic
 ```
 cappyview-privacy/
 ├── index.html                          # Landing page with feature overview
+├── support.html                        # Support Page
 ├── privacy.html                        # Privacy policy (Chrome Web Store requirement)
 ├── security.html                       # Security documentation
 ├── licenses.html                       # Third-party license attributions
