@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – CappyView</title>
+  <style>
+    body { max-width: 800px; margin: 40px auto; padding: 0 20px; font: 16px/1.6 system-ui, -apple-system, sans-serif; }
+    h1 { color: #1a73e8; }
+    h2 { color: #333; margin-top: 2em; }
+    code { background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+    ul { margin: 0.5em 0; }
+    li { margin: 0.5em 0; }
+    .notice { background: #e8f4fd; border-left: 4px solid #1a73e8; padding: 1em; margin: 1.5em 0; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy for CappyView</h1>
+  <p><strong>Last Updated:</strong> December 2024</p>
+  
+  <div class="notice">
+    <strong>Summary:</strong> CappyView is an internal productivity tool for healthcare professionals. It does not collect, transmit, or store any patient data, personal information, or usage analytics.
+  </div>
+
+  <h2>What CappyView Does</h2>
+  <p>CappyView is a Chrome extension that enhances internal case management workflows within Natera's LIMS (Laboratory Information Management System) and Baylor Genetics search interfaces. It adds navigation tools, customization options, and workflow improvements for authorized users.</p>
+
+  <h2>Data Collection & Storage</h2>
+  <p><strong>CappyView does NOT collect, transmit, or store:</strong></p>
+  <ul>
+    <li>Patient health information (PHI)</li>
+    <li>Personal identifying information</li>
+    <li>Usage analytics or telemetry</li>
+    <li>Browsing history or activity outside specified domains</li>
+    <li>Any data sent to external servers</li>
+  </ul>
+
+  <p><strong>CappyView DOES store locally (on your device only):</strong></p>
+  <ul>
+    <li>User interface preferences (sidebar width, toolbar position, theme color)</li>
+    <li>Display settings (PDF zoom level, table filter preferences)</li>
+    <li>Temporary session data for image gallery performance (cleared when gallery closes)</li>
+  </ul>
+  
+  <p>All preference data is stored using Chrome's built-in <code>chrome.storage.local</code> and <code>chrome.storage.sync</code> APIs. This data consists solely of non-sensitive configuration values and never includes patient information or case details.</p>
+
+  <h2>Permissions Explained</h2>
+  <p>CappyView requests the following Chrome permissions. Here's why each is needed:</p>
+
+  <h3>Storage Permission</h3>
+  <p>Used to save your UI preferences (sidebar width, toolbar state, theme color, PDF zoom level) locally on your device. No patient data is ever stored.</p>
+
+  <h3>Scripting Permission</h3>
+  <p>Allows CappyView to add navigation toolbars and sidebar panels to internal LIMS pages. Scripts only run on whitelisted internal domains and only read publicly visible page elements to enable navigation features.</p>
+
+  <h3>Tabs Permission</h3>
+  <p>Used to open and manage case-related tabs (Files, Images, Samples, Support pages) based on the current case you're viewing. CappyView does not access tabs outside the specified internal domains and does not read your browsing history.</p>
+
+  <h3>Web Navigation Permission</h3>
+  <p>Detects when you navigate between pages in the single-page application to refresh toolbars and sidebars appropriately. Does not intercept, modify, or monitor network traffic.</p>
+
+  <h3>Host Permissions</h3>
+  <p>CappyView only operates on these specific internal domains:</p>
+  <ul>
+    <li><code>https://lims.natera.com/prod-lims/app/*</code></li>
+    <li><code>https://lims.natera.com/extranet/app/*</code></li>
+    <li><code>https://generesults.baylorgenetics.com/*</code></li>
+  </ul>
+  <p>These permissions allow CappyView to add functionality to these internal tools. The extension cannot access any other websites or domains.</p>
+
+  <h2>Third-Party Code</h2>
+  <p>CappyView includes one third-party library:</p>
+  <ul>
+    <li><strong>DOMPurify</strong> – Used to sanitize HTML content for security purposes. This library is bundled directly in the extension (not loaded from external sources) and does not collect or transmit any data. Licensed under Apache 2.0.</li>
+  </ul>
+
+  <h2>No Analytics or Tracking</h2>
+  <p>CappyView includes:</p>
+  <ul>
+    <li>❌ No analytics services</li>
+    <li>❌ No tracking cookies</li>
+    <li>❌ No advertising</li>
+    <li>❌ No telemetry or usage reporting</li>
+    <li>❌ No external network requests (beyond the internal domains above)</li>
+  </ul>
+
+  <h2>Security</h2>
+  <p>CappyView follows Chrome Manifest V3 security standards:</p>
+  <ul>
+    <li>All content scripts use strict Content Security Policy</li>
+    <li>DOM insertion is sanitized to prevent XSS attacks</li>
+    <li>Message passing validates origins</li>
+    <li>No <code>eval()</code> or dynamic code execution</li>
+    <li>Service worker background architecture</li>
+  </ul>
+  
+  <p>For detailed security information, see the <a href="https://github.com/yourusername/cappyview-privacy/blob/main/SECURITY.md">full security documentation</a>.</p>
+
+  <h2>Your Rights</h2>
+  <p>Since CappyView does not collect or store any personal data:</p>
+  <ul>
+    <li>There is no personal data to access, modify, or delete</li>
+    <li>Local preferences can be cleared by uninstalling the extension or resetting Chrome's extension storage</li>
+    <li>No data is shared with third parties</li>
+  </ul>
+
+  <h2>Updates to This Policy</h2>
+  <p>If CappyView's data practices change, this privacy policy will be updated and the "Last Updated" date will reflect the change. Continued use of the extension after updates constitutes acceptance of the new terms.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this privacy policy or CappyView's data practices?</p>
+  <p>Email: <a href="mailto:wkeohavong@natera.com">wkeohavong@natera.com</a></p>
+
+  <hr style="margin: 3em 0; border: none; border-top: 1px solid #ddd;">
+  
+  <nav>
+    <a href="security.html">Security Documentation</a> |
+    <a href="licenses.html">Third-Party Licenses</a>
+  </nav>
+</body>
+</html>
