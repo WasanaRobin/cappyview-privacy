@@ -20,7 +20,7 @@
   <h2>Manifest Permissions (Justification)</h2>
   <ul>
     <li><strong>storage</strong> — Save non-PHI UI preferences such as sidebar width, toolbar state, PDF zoom, and theme color. Data is stored in <code>chrome.storage.local</code> and <code>chrome.storage.sync</code>; no PHI or patient identifiers are ever written.</li>
-    <li><strong>scripting</strong> — Inject the sidebar, gallery, and table toolbar logic into allowed LIMS pages only. No <code>eval</code>, no remote code execution, no injection on unapproved domains.</li>
+    <li><strong>scripting</strong> — Used only on open LIMS case tabs to run small, in-page DOM probes via <code>chrome.scripting.executeScript</code>. These probes discover related internal links (samples, sendout panel orders, Support Review pages, and attachment PDFs) so the "Open / Close Case Tabs" tools can correctly identify which tabs belong to the active case. No remote code is executed, no scripts are injected into non-whitelisted sites, and the results never leave the user's machine.</li>
     <li><strong>tabs</strong> — Open and manage case-related tabs (Files, Images, Samples, Support, Review & Send). Used only to read the active tab's URL for routing and open known internal destinations. Does <strong>not</strong> enumerate unrelated tabs, scrape page content, or access browser history.</li>
     <li><strong>webNavigation</strong> — Detect navigation changes (SPA route updates, reloads) to re-attach or re-hydrate toolbars and sidebars. Observes navigation events only; does <strong>not</strong> intercept or alter network traffic.</li>
     <li><strong>host_permissions</strong>
