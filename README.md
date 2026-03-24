@@ -14,7 +14,7 @@ This repository contains:
 - **Support** – Contact info, internal feedback form, and common solutions to troubleshoot complications.
 - **Privacy Policy** – Required by Chrome Web Store, explains data handling and permissions
 - **Security Documentation** – Details security practices and architecture
-- **Third-Party Licenses** – Attribution for open-source components (DOMPurify, Flaticon icons)
+- **Third-Party Licenses** – Attribution for open-source components (Flaticon icons)
 - **About Page** – Overview of CappyView features and functionality
 
 ## 🎯 Purpose
@@ -34,7 +34,6 @@ cappyview-privacy/
 ├── security.html                       # Security documentation
 ├── licenses.html                       # Third-party license attributions
 └── licenses/
-    ├── DOMPurify-Apache-2.0.txt       # DOMPurify license
     ├── CappyView-Internal-License.txt  # Internal license agreement
     └── Flaticon-License.txt           # Flaticon icon license
 └── assets/
@@ -58,8 +57,8 @@ cappyview-privacy/
 
 The documentation in this repository is made available for transparency and compliance purposes. CappyView itself is proprietary software licensed for internal use by Natera, Inc.
 
-Third-party components are used under their respective licenses (Apache 2.0, Flaticon Free License) – see the [licenses page](https://wasanarobin.github.io/cappyview-privacy/licenses.html) for details.
+Third-party components are used under their respective licenses (Flaticon Free License) – see the [licenses page](https://wasanarobin.github.io/cappyview-privacy/licenses.html) for details.
 
 ---
 
-**Copyright © 2025 Wasana Keohavong**
+**Copyright © 2025-2026 Wasana Keohavong**
