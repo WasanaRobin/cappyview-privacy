@@ -19,7 +19,7 @@
 </head>
 <body>
   <h1>Privacy Policy for CappyView</h1>
-  <p><strong>Last Updated:</strong> December 11, 2025</p>
+  <p><strong>Last Updated:</strong> 24 March 2026</p>
   
   <h2>Privacy Summary</h2>
   <div class="summary-box">
@@ -74,10 +74,9 @@
     <strong>Technical Note:</strong> Access to underlying systems is controlled by the organization. CappyView operates solely within the scope of the access the user already has.
   </div>
 
-  <h2>Third-Party Code</h2>
-  <p>CappyView includes the following bundled libraries:</p>
+  <h2>Third-Party Assets</h2>
+  <p>CappyView includes the following third-party assets:</p>
   <ul>
-    <li><strong>DOMPurify</strong> — Sanitizes HTML for security. Bundled locally, no data transmission.</li>
     <li><strong>UIcons by Flaticon</strong> — Bundled vector icons. Attribution provided per license terms.</li>
   </ul>
   <p>For full licensing information, see the <a href="licenses.html">Third-Party Licenses page</a>.</p>
@@ -98,7 +97,7 @@
   <p>CappyView follows Chrome Manifest V3 security standards:</p>
   <ul>
     <li>Strict content security policy</li>
-    <li>DOM sanitization to prevent XSS</li>
+    <li>All dynamic content uses safe DOM APIs (<code>textContent</code>, <code>createElement</code>) instead of HTML string insertion.</li>
     <li>Validated message passing</li>
     <li>No <code>eval()</code> or dynamic code execution</li>
     <li>Service worker background architecture</li>
@@ -134,5 +133,3 @@
 
 </body>
 </html>
-
-
