@@ -32,9 +32,10 @@
   <ul>
     <li>No inline scripts or string-built event handlers in any HTML pages.</li>
     <li>Background script is MV3-compliant and registered as a module.</li>
-    <li>Dynamic DOM updates always use <code>textContent</code>, <code>innerText</code>, or DOMPurify-sanitized HTML.</li>
-    <li>Shared <strong>Sanitization Utility</strong> wraps DOMPurify with strict <code>SANITIZE_OPTS</code> applied consistently across: sidebar renderers, toolbar modules, gallery, and options pages.</li>
-    <li><code>safeDisplay</code> and <code>sanitizeText</code> utilities enforce plain text when possible.</li>
+    <li>Dynamic DOM updates use safe DOM APIs: <code>textContent</code>, <code>createElement()</code>, and controlled property assignments.</li>
+    <li>No use of <code>innerHTML</code> with user-controlled data — all dynamic content inserted via safe DOM methods.</li>
+    <li><code>element.textContent = value</code> automatically escapes HTML, preventing XSS attacks.</li>
+    <li><code>JSON.parse(JSON.stringify(...))</code> used to break object taint chains where needed.</li>
   </ul>
 
   <h2>Messaging</h2>
@@ -49,10 +50,11 @@
 
   <h2>DOM & XSS Protection</h2>
   <ul>
-    <li>All direct <code>innerHTML</code> replaced with DOMPurify-sanitized insertion.</li>
-    <li><code>tableFilter</code> and sidebar builders sanitize all rendered HTML fragments.</li>
+    <li>All dynamic content uses safe DOM APIs (<code>textContent</code>, <code>createElement</code>) instead of HTML string insertion.</li>
+    <li><code>tableFilter</code> and sidebar builders use controlled element creation and text assignment.</li>
     <li>No <code>eval</code>, <code>Function</code>, or dynamic string timers.</li>
-    <li>Shared utilities (<code>sanitizeText</code>, <code>safeInsert</code>) enforce safe rendering paths.</li>
+    <li>DOMParser used only for static/controlled content (SVG icons, known-safe templates).</li>
+    <li>No <code>innerHTML</code> with user input anywhere in the codebase.</li>
     <li>Strict Content Security Policy enforced by MV3 packaging.</li>
   </ul>
 
@@ -60,18 +62,20 @@
   <ul>
     <li>No secrets, credentials, or API keys in repository.</li>
     <li>No analytics or telemetry.</li>
-    <li><code>purify.min.js</code> vendored and pinned to a known version.</li>
     <li><code>LICENSE.txt</code> and <code>LICENSES/</code> included in build output.</li>
-    <li>No new third-party libraries introduced in this release.</li>
+    <li>No third-party runtime dependencies.</li>
     <li>Theme, customization, and options hub scripts verified for CSP compliance.</li>
   </ul>
 
   <h2>Third-Party Licenses</h2>
   <p>
-    This extension bundles <strong>DOMPurify</strong> for safe HTML sanitization.
-    DOMPurify is licensed under the Apache License 2.0. You can view the full
-    license text here:
-    <a href="licenses/DOMPurify-Apache-2.0.txt">DOMPurify-Apache-2.0.txt</a>.
+    This extension uses <strong>UIcons by Flaticon</strong> for vector icons in the user interface.
+    Flaticon is licensed under the Flaticon Free License (requires attribution). You can view the full
+    license details here:
+    <a href="licenses/Flaticon-License.txt">Flaticon-License.txt</a>.
+  </p>
+  <p>
+    <em>Note: Earlier versions referenced DOMPurify for HTML sanitization. As of v2.0+, CappyView uses inherently safe DOM APIs that eliminate the need for sanitization libraries.</em>
   </p>
 
   <div class="context-note">
