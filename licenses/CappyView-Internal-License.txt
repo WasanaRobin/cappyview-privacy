@@ -1,7 +1,7 @@
 CappyView Chrome Extension
 Internal License Agreement
 
-Copyright (c) 2025 Wasana Keohavong. All rights reserved.
+Copyright (c) 2025 - 2026 Wasana Keohavong Keohavong. All rights reserved.
 Licensed for internal use by Natera, Inc.
 
 This software and its source code ("CappyView") are the original work of
